@@ -1,0 +1,33 @@
+{
+    "name": "elk-logger",
+    "version": "1.0.0",
+    "description": "Listen to an Elk M1 and logs messages to a database",
+    "main": "dist/index.js",
+    "repository": "https://github.com/joekrill/elk-logger",
+    "author": "Joe Krill <joe@joekrill.com>",
+    "license": "MIT",
+    "scripts": {
+      "build": "tsc",
+      "start": "node dist/index.js",
+      "watch-node": "nodemon dist/index.js",
+      "watch": "tsc -w"
+    },
+    "devDependencies": {
+      "@types/backoff": "^2.5.1",
+      "@types/knex": "^0.14.26",
+      "@types/node": "^10.12.0",
+      "@types/pino": "^5.8.0",
+      "tslint": "^5.11.0",
+      "typescript": "^3.1.3"
+    },
+    "dependencies": {
+      "backoff": "^2.5.0",
+      "elk-client": "^1.0.1",
+      "elk-message": "^1.0.4",
+      "knex": "^0.15.2",
+      "pg": "^7.6.0",
+      "pino": "^5.8.0",
+      "pino-pretty": "^2.2.2",
+      "sqlite3": "^4.0.3"
+    }
+  }
